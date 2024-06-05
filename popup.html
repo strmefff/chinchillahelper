@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/microtip/microtip.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="da">
+    <img style="margin-left: 130px; margin-top: 20px;" src="images/logo.png" alt="Лого умер">
+   <div class="power-switch-wr">
+    <div class="power-switch">
+        <input id="turn" type="checkbox" />
+        <div class="button">
+            <svg class="power-off">
+                <use xlink:href="#line" class="line" />
+                <use xlink:href="#circle" class="circle" />
+            </svg>
+            <svg class="power-on">
+                <use xlink:href="#line" class="line" />
+                <use xlink:href="#circle" class="circle" />
+            </svg>
+        </div>
+    </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="line">
+        <line x1="75" y1="34" x2="75" y2="74"/>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" id="circle">
+        <circle cx="75" cy="80" r="35"/>
+    </symbol>
+</svg>
+<center style="margin-top: 30px">
+<a class="btn" id="btn-settings"><i class="fa fa-cogs" aria-hidden="true"></i> Настройки</a>
+<a class="btn" id="btn-replaceText"><i class="fa fa-text-width" aria-hidden="true"></i> Замена слов</a>
+<a class="btn" id="btn-funcKeyboard"><i class="fa fa-cubes" aria-hidden="true"></i> Биндер</a>
+</center>
+<a style="left: 50%; margin-bottom: 20px" href="https://vk.com/kalibr220" target="_blank" class="vk"><i class="fa fa-vk" aria-hidden="true"></i></a>
+</div>
+<script src="popup.js"></script>
+<script src="global.js"></script>
+</body>
+</html>

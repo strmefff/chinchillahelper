@@ -1,0 +1,27 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "Chinchilla Helper"
+   },
+   "author": "storm",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.js", "main.js", "ulog.js", "global.js" ],
+      "matches": [ "https://forum.robo-hamster.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Набор функций для удобной работы на форуме.",
+   "icons": {
+      "128": "/images/128.png",
+      "16": "/images/16.png",
+      "48": "/images/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlKUXauYkbzsxx5VrxvmQHx5XDTa23ihhYVviTPeqwNULYNx97H48V22mGzZS2GnrCGwscD2zRtrBv4Ayd4NFafAAQ7yFO52kxxzJB+zxzAJsCqI62y7ncMwK0L4jRKnMqXPEDRm/jBgAKduXnCR7jfrPH5WXf8WEpV+pNthenMzq+TlaCxFA+X21DQfwfS2TZojqYeJe1evQL4w1Bjc97rIg8AeLQbW3YMbkuNxBru9S4nHfbAD6mO7gGsXp7L6uJoY49Yt9SX2DbMuxDGrerxwRaTqMmq4tyiYZ7HBVqYBRHZbPQYdRCbClQ8DmalRz/vVnr4o5A6moTWPMyJPz1wIDAQAB",
+   "manifest_version": 3,
+   "name": "Chinchilla Helper",
+   "permissions": [ "storage", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.8"
+}
